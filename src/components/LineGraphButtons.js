@@ -23,7 +23,7 @@ function LineGraphButtons({
         active={casesType === "cases"}
         isBlue={true}
         onClick={(e) => setCasesType("cases")}
-        title="IMUḌAN"
+        title="WID YUḌNEN"
         cases={prettyPrintStat(todayCases)}
         total={prettyPrintStat(cases)}
       />

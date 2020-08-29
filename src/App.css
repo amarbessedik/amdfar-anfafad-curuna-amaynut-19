@@ -38,7 +38,7 @@ html {
   position: absolute;
   left: 35vw;
   margin: auto;
-  top: 590px;
+  top: 72vh;
 }
 .form__dropdown {
   background: #fff;
@@ -73,8 +73,9 @@ html {
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  top: 30vh;
+  position: absolute;
+  top: 22.5vh;
+  right: 3vw;
   box-shadow: 0 0 15px -4px #555;
   border-radius: 5px;
   margin-left: 40px;
@@ -115,4 +116,12 @@ html {
   .app__graph__table, .app__info__stats{
     width: 93vw;
   }
+
+  .app__dropdown {
+  top: 29vh;
+  left: 25vw;
+}
+.form__dropdown{
+  width: 50vw;
+}
 }

@@ -33,11 +33,24 @@ export default function App2() {
     lat: 18.82746,
     lng: -5.4796,
   });
-  const [mapZoom, setMapZoom] = useState(2);
+  const [mapZoom, setMapZoom] = useState(1);
   //map countries
   const [mapCountries, setMapCountries] = useState([]);
   //cases types -> {cases, recovered, deaths}
   const [casesType, setCasesType] = useState("cases");
+
+  const adapteCasesType = (casesT) =>{
+    switch(casesT){
+      case 'cases':
+        return "WID YUḌNEN";
+      case 'recovered':
+        return 'WID YEJJAN';
+      case 'deaths':
+        return 'WID YEMUTEN';
+      default:
+        return null;    
+    }
+  }
 
   //This code runs once when the code is loaded and not again after
   useEffect(() => {
@@ -115,7 +128,7 @@ export default function App2() {
               onChange={onCountryChange}
             >
               <MenuItem key="0" value="worldwide">
-                <span>Amaḍal</span>
+                <span>AMAḌAL</span>
               </MenuItem>
               {
                 /* loop through all countries and display each as an option */
@@ -136,7 +149,7 @@ export default function App2() {
             active={casesType === "cases"}
             isBlue={true}
             onClick={(e) => setCasesType("cases")}
-            title="IMUḌAN"
+            title="WID YUḌNEN"
             cases={prettyPrintStat(countryInfo.todayCases)}
             total={prettyPrintStat(countryInfo.cases)}
           />
@@ -164,8 +177,17 @@ export default function App2() {
             <CardContent>
               {/* graph */}
               <h3 style={{ textTransform: "uppercase" }} className="app__graph">
-                AMAḌAL AKIT {casesType}
+                {adapteCasesType(casesType)} DEG AMAḌAL AKIT
               </h3>
+              <span
+                style={{
+                  display: "block",
+                  textAlign: "center",
+                  textTransform: "capitalize",
+                }}
+              >
+                (Asmerni N Uṭṭunen D Asawen)
+              </span>
               <LineGraphButtons
                 countryInfo={countryInfo}
                 setCasesType={setCasesType}
@@ -180,9 +202,17 @@ export default function App2() {
               <div id="table" style={{ height: "80px" }}></div>
               <div id="_table" className="app__table__header">
                 <h3 style={{ textTransform: "uppercase" }}>
-                  UṬṬUNEN SRID N YEL TAMURT
+                  UṬṬUNEN SRID SI YELL TAMURT
                 </h3>
-                <p>(ASMERNI S AṢṢUBU)</p>
+                <span
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                    textTransform: "capitalize",
+                  }}
+                >
+                  (Asmerni N Uṭṭunen D Akewssar)
+                </span>
               </div>
               <Table casesType={casesType} countries={tableData} />
             </CardContent>

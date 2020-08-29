@@ -10,9 +10,9 @@ function Table({ countries }) {
         <div className={styles.table}>
           <table>
             <tr>
-              <th>TIƔMART</th>
+              <th>TAMURT</th>
               <th>UṬṬUNEN URMIDEN</th>
-              <th>WID YEMMUTEN</th>
+              <th>WID YEMUTEN</th>
               <th>WID YEJJAN</th>
               <th>UṬṬUNEN AKIT</th>
             </tr>

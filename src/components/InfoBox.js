@@ -36,7 +36,7 @@ function InfoBox({
           <Typography className={styles.infoBox__title} color="textSecondary">
             {title}
           </Typography>
-          {/* Number cases numeral(country.cases).format(0.0)*/}
+          {/* Number cases numeral(country.cases).format(0.0)*/} 
           <h2
             className={`${
               (isBlue && styles.blue) ||

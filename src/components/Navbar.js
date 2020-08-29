@@ -7,6 +7,7 @@ import MapIcon from "@material-ui/icons/Map";
 import TimelineIcon from "@material-ui/icons/Timeline";
 import PublicIcon from "@material-ui/icons/Public";
 import InfoIcon from "@material-ui/icons/Info";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 
 function Navbar() {
   const [open, setOpen] = useState(false); 
@@ -45,7 +46,7 @@ function Navbar() {
         <li>
           <MapIcon className={styles.link__icon} />
           <a onMouseLeave={cleanUrl} href="#map">
-            TAGERTILT N DUNNIT
+            TAGERTILT UMAḌAL
           </a>
         </li>
         <li>
@@ -56,7 +57,7 @@ function Navbar() {
         </li>
         <li>
           <TimelineIcon className={styles.link__icon} />
-          <a onMouseLeave={cleanUrl} href="#graph">
+          <a onMouseLeave={cleanUrl} href="#amawal">
             TIMẒṚIT
           </a>
         </li>
@@ -64,6 +65,12 @@ function Navbar() {
           <InfoIcon className={styles.link__icon} />
           <a onMouseLeave={cleanUrl} href="#about">
             ARNU ẒER
+          </a>
+        </li>
+        <li onClick={closeMenu}>
+          <MenuBookIcon className={styles.link__icon} />
+          <a onMouseLeave={cleanUrl} href="#amawal">
+            AMAWAL
           </a>
         </li>
       </ul>
@@ -79,7 +86,7 @@ function Navbar() {
           <li onClick={closeMenu}>
             <MapIcon className={styles.link__icon} />
             <a onMouseLeave={cleanUrl} href="#map">
-              TAGERTILT N DUNNIT
+              TAGERTILT UMAḌAL
             </a>
           </li>
           <li onClick={closeMenu}>
@@ -92,6 +99,12 @@ function Navbar() {
             <TimelineIcon className={styles.link__icon} />
             <a onMouseLeave={cleanUrl} href="#graph">
               TIMẒṚIT
+            </a>
+          </li>
+          <li onClick={closeMenu}>
+            <MenuBookIcon className={styles.link__icon} />
+            <a onMouseLeave={cleanUrl} href="#amawal">
+              AMAWAL
             </a>
           </li>
           <li onClick={closeMenu}>

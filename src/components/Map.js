@@ -7,6 +7,18 @@ function Map({ countries, center, zoom, casesType}) {
     // console.log("countries MAP >>>", countries);
     return (
       <div id="mapp" className="map">
+        <p
+          style={{
+            // maxWidth: '75vw',
+            color: "#ddd",
+            marginTop: 0,
+          }}
+        >
+          Tekki ɣef yiwen uzday imdawer di tagartilt neɣ tiqfilin yellan ar tama
+          tayfust n tegartilt. Tiqfilin (+/-) ar tama tazelmat uflla n tegartilt
+          semɣarent neɣ smectuhuyent (ttzumint). Tzemreḍ daɣen attṣubbeḍ d
+          akewssar attwaliḍ timẓrit iked w uṭṭenen imaynuten.
+        </p>
         <LeafletMap center={center} zoom={zoom}>
           <TileLayer
             fillColor="red"
@@ -16,18 +28,6 @@ function Map({ countries, center, zoom, casesType}) {
           {/* Loop through countries and draw circles on the screen */}
           {showDataOnMap(countries, casesType)}
         </LeafletMap>
-        <br />
-        <p
-          style={{
-            textAlign: "center",
-            textTransform: "uppercase",
-            color: "#61dafb",
-          }}
-        >
-          Tamaziɣt Tezmmer Atteḍfer Tamusni Tatrart (Aselkiman) am Nettat am
-          Tutlayin niḍen. Tekkit af yiwen uzday imdawer neɣ tiqfilt attezrem
-          akter. Tzemrem daɣen attṣubem d akssar.
-        </p>
       </div>
     ); 
 }

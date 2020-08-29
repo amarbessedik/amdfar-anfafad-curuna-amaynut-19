@@ -7,7 +7,7 @@ const ShareButtons = () => {
     <div className={styles.share__buttons}>
       {/* <!-- Twitter --> */}
       <a
-        href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons"
+        href="https://twitter.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -19,7 +19,7 @@ const ShareButtons = () => {
 
       {/* <!-- Facebook --> */}
       <a
-        href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com"
+        href="http://www.facebook.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -31,7 +31,7 @@ const ShareButtons = () => {
 
       {/* <!-- LinkedIn --> */}
       <a
-        href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com"
+        href="http://www.linkedin.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -43,7 +43,7 @@ const ShareButtons = () => {
 
       {/* <!-- Reddit --> */}
       <a
-        href="http://reddit.com/submit?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons"
+        href="http://reddit.com"
         target="_blank"
         rel="noopener noreferrer"
       >
